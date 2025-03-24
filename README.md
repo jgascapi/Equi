@@ -110,11 +110,11 @@ Se generaron dos archivos:
 
 Nota que no es necesario usar alguno de éstos formatos para analizar los datos. Sin embargo, la versión actual de **_Equi_** va esperar un archivo _xlsx_ con por lo menos ocho columnas: 
 
- - Columna 1: _Fecha_, puede ser cualquier clave temporal en cualquier formato.
- - Columna 2: _Identidad.sexogenxrica_, identidad sexogenérica del Evaluador; por ejemplo: "Mujer", "Hombre".
- - Columna 3: _Adscripcixn_, lugar de trabajo o estudio. De manera automática **_Equi_** va a transformar esta columna a una clave usando las letras mayúsculas seguidas de cuatro letras minúsculas; por ejemplo, "_Instituto de Ciencias, Universidad de Toluca_" será transformado a "_InstCiencUnivToluc_".  
- - Columna 4: _Intervalo.Apellido_, La clave del género de acuerdo al nombre de los CV analizados. Esta columna debe estar codificada con la clave usada en **Ciccia et al. 2025**. Los valores esperados son "_A-K_" y "_L-Z_", estos valores serán transformados a "_M_" (Masculino) y "_F_" (Femenino).
-- Columna 5-8: Las variables de evaluación, _Productividad_,	_Formacixn.Recursos_, _Divulga.Difus_ y	_Vinculacixn_. Los valores esperados son:
+ - **Columna 1:** _Fecha_, puede ser cualquier clave temporal en cualquier formato.
+ - **Columna 2:** _Identidad.sexogenxrica_, identidad sexogenérica del Evaluador; por ejemplo: "Mujer", "Hombre".
+ - **Columna 3:** _Adscripcixn_, lugar de trabajo o estudio. De manera automática **_Equi_** va a transformar esta columna a una clave usando las letras mayúsculas seguidas de cuatro letras minúsculas; por ejemplo, "_Instituto de Ciencias, Universidad de Toluca_" será transformado a "_InstCiencUnivToluc_".  
+ - **Columna 4:** _Intervalo.Apellido_, La clave del género de acuerdo al nombre de los CV analizados. Esta columna debe estar codificada con la clave usada en **Ciccia et al. 2025**. Los valores esperados son "_A-K_" y "_L-Z_", estos valores serán transformados a "_M_" (Masculino) y "_F_" (Femenino).
+- **Columnas 5-8:** Las variables de evaluación por rubro: _Productividad_,	_Formacixn.Recursos_, _Divulga.Difus_ y	_Vinculacixn_. Los valores esperados son:
   - (A) nulo, valor numérico      **1**
   - (B) poco, valor numérico      **2**
   - (C) regular, valor numérico   **3**
@@ -157,7 +157,9 @@ L-Z: F
 ```
 
 Estos tres primeros mensajes describen los datos ingresados. 
- -**Notas:** El paquete **_Equi_** va a eliminar a los individuos que tengan datos faltantes en cualquiera de las casillas.  
+- **Notas:** 
+-- El paquete **_Equi_** va a eliminar a los individuos que tengan datos faltantes en cualquiera de las casillas.  
+-- **Notas:** El paquete **_Equi_** va a eliminar a los individuos que tengan datos faltantes en cualquiera de las casillas.  
 
 
 Por default el comando va a crear un objeto dentro de R llamado **_`Data_I`_**. Revisa su contenido:
