@@ -105,5 +105,7 @@ Se generaron dos archivos:
 
 Nota que no es necesario usar alguno de éstos formatos para analizar los datos. Sin embargo, la versión actual de **_Equi_** va esperar un archivo _xlsx_ con por lo menos ocho columnas: 
 
+Columna 1: Fecha, puede ser cualquier clave temporal.
+Columna 2: Identidad.sexogenxrica, identidad sexo
 La primera columna corresponde al número o clave de individuo, las siguientes cuatro columnas contienen las variables numéricas y las dos restantes variables categóricas.
 
