@@ -142,6 +142,24 @@ Para cargar el archivo dentro de R, es necesario especificar el nombre del archi
 
 `preparar_datos(datos="Datos.simulados.xlsx")`
 
+El comando desplegará los siguientes mensajes:
+
+```
+[1] "Los datos tienen 50 individuxs con 0 variables numéricas y 8 factor(es)"
+|--------|--------|--------|--------|--------|
+Los valores de la variable Adscripcixn fueron convertidos a la siguiente clave:
+[1] "RaccPD" "Umbr"  
+La clave será almacenada en la variable -Ad.key-
+|--------|--------|--------|--------|--------|
+Los valores de la variable -Intervalo.Apellido- fueron convertidos convertidos a la variable -CV_I.S-
+A-K: M
+L-Z: F
+```
+
+Estos tres primeros mensajes describen los datos ingresados. 
+ -**Notas:** El paquete **_Equi_** va a eliminar a los individuos que tengan datos faltantes en cualquiera de las casillas.  
+
+
 Por default el comando va a crear un objeto dentro de R llamado **_`Data_I`_**. Revisa su contenido:
 
 ```
