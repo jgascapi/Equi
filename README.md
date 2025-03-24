@@ -105,8 +105,9 @@ Se generaron dos archivos:
 
 Nota que no es necesario usar alguno de éstos formatos para analizar los datos. Sin embargo, la versión actual de **_Equi_** va esperar un archivo _xlsx_ con por lo menos ocho columnas: 
 
- - Columna 1: _Fecha_, puede ser cualquier clave temporal.
- - Columna 2: _Identidad.sexogenxrica_, identidad sexogenérica del Evaluador (por ejemplo "Mujer", "Hombre",).
- - Columna 3: _Adscripcixn_, lugar de trabajo o estudio.
-La primera columna corresponde al número o clave de individuo, las siguientes cuatro columnas contienen las variables numéricas y las dos restantes variables categóricas.
-
+ - Columna 1: _Fecha_, puede ser cualquier clave temporal en cualquier formato.
+ - Columna 2: _Identidad.sexogenxrica_, identidad sexogenérica del Evaluador; por ejemplo: "Mujer", "Hombre".
+ - Columna 3: _Adscripcixn_, lugar de trabajo o estudio. De manera automática **_Equi_** va a transformar esta columna a una clave usando las letras mayúsculas seguidas de cuatro letras minúsculas; por ejemplo, "_Instituto de Ciencias, Universidad de Toluca_" será transformado a "_InstCiencUnivToluc_".  
+ - Columna 4: _Intervalo.Apellido_, La clave del género de acuerdo al nombre de los CV analizados. Esta columna debe estar codificada con la clave usada en **Ciccia et al. 2025**. Los valores esperados son "_A-K_" y "_L-Z_", estos valores serán transformados a "_M_" (Masculino) y "_F_" (Femenino).
+- Columna 5-8: Las variables de evaluación, _Productividad_,	_Formacixn.Recursos_,_Divulga.Difus_ y	_Vinculacixn_.
+ 
