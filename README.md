@@ -36,7 +36,7 @@ plot(x=seq(1:100),y=(y=log10(seq(101:200))),col=rainbow(100))
 mtext(R.version.string, side = 1, line = 4, adj = 1)
 ```
 
-Si logras ver un gráfico, y la versión reportada en la parte de abajo es mayor a 4.2 estamos listos para empezar.
+Si logras ver un gráfico, y la versión reportada en la parte de abajo es mayor a 4.2.0 estamos listos para empezar.
 
 ### Dependencias
 
@@ -158,8 +158,25 @@ L-Z: F
 
 Estos tres primeros mensajes describen los datos ingresados. 
 - **Notas:** 
--- El paquete **_Equi_** va a eliminar a los individuos que tengan datos faltantes en cualquiera de las casillas.  
--- **Notas:** El paquete **_Equi_** va a eliminar a los individuos que tengan datos faltantes en cualquiera de las casillas.  
+ - El paquete **_Equi_** va a eliminar a los individuos que tengan datos faltantes en cualquiera de las casillas.  
+ - Revisa con cuidado que el número de claves generadas correspondan al número de adscripciones.  
+
+El siguiente mensaje describe las variables y el contenido los datos por analizar. Nota que las columnas de la cinco a la diez contienen las evaluaciones transformadas a valores numéricos.
+
+```
+Estas son las variables por analizar, revisa con cuidado:
+ [1] "Variable en la columna 1 : Fecha"                 
+ [2] "Variable en la columna 2 : Identidad.sexogenxrica"
+ [3] "Variable en la columna 3 : Adscripcixn"           
+ [4] "Variable en la columna 4 : Intervalo.Apellido"    
+ [5] "Variable en la columna 5 : Prod"                  
+ [6] "Variable en la columna 6 : Fm.Rec"                
+ [7] "Variable en la columna 7 : Div.Dif"               
+ [8] "Variable en la columna 8 : Vinc"                  
+ [9] "Variable en la columna 9 : Ad.key"                
+[10] "Variable en la columna 10 : CV_I.S"      
+```
+
 
 
 Por default el comando va a crear un objeto dentro de R llamado **_`Data_I`_**. Revisa su contenido:
