@@ -117,3 +117,11 @@ Nota que no es necesario usar alguno de éstos formatos para analizar los datos.
   - (E) muy bueno, valor numérico **5**
 
 Consulta **Ciccia et al. 2025** para los detalles.
+
+#### Generar un archivo de datos al azar (opcional)
+
+Esta función va a generar un archivo _xlsx_ con datos al azar. Ejecuta elcomando:  
+
+`simular_datos()`
+
+Desplegará un mensaje con la ubicación del archivo **_Datos.simulados.xlsx_**. Revisa el contenido del archivo, ésta es la estructura y tipo de datos que espera el análisis.
