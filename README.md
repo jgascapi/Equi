@@ -37,3 +37,18 @@ mtext(R.version.string, side = 1, line = 4, adj = 1)
 ```
 
 Si logras ver un gráfico, y la versión reportada en la parte de abajo es mayor a 4.2 estamos listos para empezar.
+
+### Dependencias
+
+**_Equi_** está escrito para ser instalado junto con todas las dependencias que necesita para funcionar. Sin embargo, al estar en contínuo desarrollo, recomendamos (para esta versión) instalar manualmente las dependencias necesarias. **_Este paso sólo lo tienes que realizar una vez_**.
+
+```R
+install.packages(c("ggplot2","ggpubr","gridExtra","reshape2","xlsx","report","devtools","ggfortify"),dependecies=TRUE)
+```
+
+Si tu instalación es nueva probablemente salga el siguiente mensaje:
+
+`--- Please select a CRAN mirror for use in this session ---`
+
+Seleccióna la locación más cercana a tu ciudad y continúa. Dependiendo de la velocidad de la red y la computadora esto puede tardar algunos minutos.
+
