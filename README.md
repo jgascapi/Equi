@@ -105,8 +105,8 @@ Se generaron dos archivos:
 
 Nota que no es necesario usar alguno de éstos formatos para analizar los datos. Sin embargo, la versión actual de **_Equi_** va esperar un archivo _xlsx_ con por lo menos ocho columnas: 
 
-  Columna 1: _Fecha_, puede ser cualquier clave temporal.
-  Columna 2: _Identidad.sexogenxrica_, identidad sexogenérica del Evaluador (por ejemplo "Mujer", "Hombre",).
-  Columna 3: _Adscripcixn_, lugar de trabajo o estudio.
+ - Columna 1: _Fecha_, puede ser cualquier clave temporal.
+ - Columna 2: _Identidad.sexogenxrica_, identidad sexogenérica del Evaluador (por ejemplo "Mujer", "Hombre",).
+ - Columna 3: _Adscripcixn_, lugar de trabajo o estudio.
 La primera columna corresponde al número o clave de individuo, las siguientes cuatro columnas contienen las variables numéricas y las dos restantes variables categóricas.
 
