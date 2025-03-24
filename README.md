@@ -52,3 +52,37 @@ Si tu instalación es nueva probablemente salga el siguiente mensaje:
 
 Seleccióna la locación más cercana a tu ciudad y continúa. Dependiendo de la velocidad de la red y la computadora esto puede tardar algunos minutos.
 
+### Instalación del paquete
+
+Descarga el paquete desde https://github.com/jgascapi/Equi . Crea un directorio en una ubicación sencilla (por ejemplo: `Escritorio/Equi`). Descomprímelo y abre tu sesión de **R**. _Nota:_ Evita nombrar tu directorio de trabajo con acentos, caracteres especiales y/o espacios.
+
+Establece tu directorio de trabajo:
+
+```
+##Para identificar tu directorio de trabajo
+getwd()
+```
+Establece el directorio de tabajo donde descargaste y descomprimiste el paquete:
+
+```
+#por ejemplo en windows
+setwd("Escritorio/Equi/")
+#por ejemplo en Mac
+setwd("~/Escritorio/Equi/")
+```
+Ahora carga el paquete:
+
+`devtools::load_all("Equ")`
+
+Debe salir el siguiente mensaje:
+
+`ℹ Loading Equ`
+
+Ahora, comprueba la instalación con el comando `help()`.  Éste va a desplegar la documentación del comando, por ejemplo:
+
+`help(preparar_datos)`
+
+Revisa la documentación y ciérrala con con la **tecla q**. 
+
+---
+
