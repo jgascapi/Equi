@@ -90,7 +90,7 @@ Revisa la documentación y ciérrala con con la **tecla q**.
 
 Recomendamos correr todos los pasos de este manual antes de usar tus propios datos.
 
-#### Generar archivos de entrada
+### Generar archivos de entrada
 
 El primer paso es obtener el formato para captura de datos:
 
@@ -118,10 +118,31 @@ Nota que no es necesario usar alguno de éstos formatos para analizar los datos.
 
 Consulta **Ciccia et al. 2025** para los detalles.
 
-#### Generar un archivo de datos al azar (opcional)
+### Generar un archivo de datos al azar (opcional)
 
 Esta función va a generar un archivo _xlsx_ con datos al azar. Ejecuta elcomando:  
 
 `simular_datos()`
 
 Desplegará un mensaje con la ubicación del archivo **_Datos.simulados.xlsx_**. Revisa el contenido del archivo, ésta es la estructura y tipo de datos que espera el análisis.
+### Cargar en R el archivo xlsx con los datos 
+
+Para cargar el archivo dentro de R, es necesario especificar el nombre del archivo xlsx. Para este ejemplo usaremos el archivo **_Datos.simulados.xlsx_** generado en el paso anterior. Si tienes tus propios datos, sustituye el nombre por tu propio archivo.
+
+`preparar_datos(datos="Datos.simulados.xlsx")`
+
+Por default el comando va a crear un objeto dentro de R llamado **_`Data_I`_**. Revisa su contenido:
+
+```
+Data_I
+##Ahora obtengamos un breve resumen del contenido
+summary(Data_I)
+```
+
+#### Notas: 
+
+* El archivo debe estar localizado en tu directorio de trabajo.
+* El nomre de tu archivo debe estar entre comillas **" "** ó **' '**
+* La presente versión de **_Equi_** solo acepta archivos en formato **_xlsx_**.
+
+---
