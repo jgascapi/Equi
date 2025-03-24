@@ -86,3 +86,22 @@ Revisa la documentación y ciérrala con con la **tecla q**.
 
 ---
 
+## Implemetación
+
+Recomendamos correr todos los pasos de este manual antes de usar tus propios datos.
+
+#### Generar archivos de entrada
+
+El primer paso es obtener el formato para captura de datos:
+
+`preparar_formato()`
+
+Desplegará un mensaje con la ubicación de los archivos.
+
+Se generaron dos archivos:
+
+1. **_Formato_captura.pdf_**, para imprimir y capaturar los datos a mano. 
+2. **_Formato_captura.xlsx_**, es una hoja de cálculo en formato _xlsx_ para capturar los datos.
+
+Nota que no es necesario usar alguno de éstos formatos para analizar los datos. Sin embargo, la versión actual de **_Equi_** va esperar un archivo _xlsx_ con siete columnas. La primera columna corresponde al número o clave de individuo, las siguientes cuatro columnas contienen las variables numéricas y las dos restantes variables categóricas.
+
