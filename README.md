@@ -103,5 +103,7 @@ Se generaron dos archivos:
 1. **_Formato_captura.pdf_**, para imprimir y capaturar los datos a mano. 
 2. **_Formato_captura.xlsx_**, es una hoja de cálculo en formato _xlsx_ para capturar los datos.
 
-Nota que no es necesario usar alguno de éstos formatos para analizar los datos. Sin embargo, la versión actual de **_Equi_** va esperar un archivo _xlsx_ con siete columnas. La primera columna corresponde al número o clave de individuo, las siguientes cuatro columnas contienen las variables numéricas y las dos restantes variables categóricas.
+Nota que no es necesario usar alguno de éstos formatos para analizar los datos. Sin embargo, la versión actual de **_Equi_** va esperar un archivo _xlsx_ con por lo menos ocho columnas: 
+
+La primera columna corresponde al número o clave de individuo, las siguientes cuatro columnas contienen las variables numéricas y las dos restantes variables categóricas.
 
