@@ -129,7 +129,13 @@ Esta función va a generar un archivo _xlsx_ con datos al azar. Ejecuta elcomand
 
 `simular_datos()`
 
-Desplegará un mensaje con la ubicación del archivo **_Datos.simulados.xlsx_**. Revisa el contenido del archivo, ésta es la estructura y tipo de datos que espera el análisis.
+Desplegará un mensaje con la ubicación del archivo **_Datos.simulados.xlsx_**. 
+
+`El archivo Datos.simulados.xlsx se encuentra en /home/jvalantine/Desktop/Equidad_Umbrxlla/`
+
+Revisa el contenido del archivo, ésta es la estructura y tipo de datos que espera el análisis.
+
+----
 ### Cargar en R el archivo xlsx con los datos 
 
 Para cargar el archivo dentro de R, es necesario especificar el nombre del archivo xlsx. Para este ejemplo usaremos el archivo **_Datos.simulados.xlsx_** generado en el paso anterior. Si tienes tus propios datos, sustituye el nombre por tu propio archivo.
