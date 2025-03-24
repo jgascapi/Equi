@@ -116,9 +116,4 @@ Nota que no es necesario usar alguno de éstos formatos para analizar los datos.
   - (D) bueno, valor numérico     **4**
   - (E) muy bueno, valor numérico **5**
 
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text | 
-
-Consulta 
+Consulta **Ciccia et al. 2025** para los detalles.
