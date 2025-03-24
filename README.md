@@ -96,7 +96,12 @@ El primer paso es obtener el formato para captura de datos:
 
 `preparar_formato()`
 
-Desplegará un mensaje con la ubicación de los archivos.
+Desplegará un mensaje con la ubicación de los archivos, por ejemplo:
+
+`
+"Los archivos fueron generados en /home/jvalantine/Desktop/Equidad_Umbrxlla/"
+`
+
 
 Se generaron dos archivos:
 
