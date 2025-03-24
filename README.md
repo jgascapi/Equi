@@ -110,9 +110,15 @@ Nota que no es necesario usar alguno de éstos formatos para analizar los datos.
  - Columna 3: _Adscripcixn_, lugar de trabajo o estudio. De manera automática **_Equi_** va a transformar esta columna a una clave usando las letras mayúsculas seguidas de cuatro letras minúsculas; por ejemplo, "_Instituto de Ciencias, Universidad de Toluca_" será transformado a "_InstCiencUnivToluc_".  
  - Columna 4: _Intervalo.Apellido_, La clave del género de acuerdo al nombre de los CV analizados. Esta columna debe estar codificada con la clave usada en **Ciccia et al. 2025**. Los valores esperados son "_A-K_" y "_L-Z_", estos valores serán transformados a "_M_" (Masculino) y "_F_" (Femenino).
 - Columna 5-8: Las variables de evaluación, _Productividad_,	_Formacixn.Recursos_, _Divulga.Difus_ y	_Vinculacixn_. Los valores esperados son:
-  - (A) nulo, valor numérico      1
-  - (B) poco, valor numérico      2
-  - (C) regular, valor numérico   3
-  - (D) bueno, valor numérico     4
-  - (E) muy bueno, valor numérico 5
- 
+  - (A) nulo, valor numérico      **1**
+  - (B) poco, valor numérico      **2**
+  - (C) regular, valor numérico   **3**
+  - (D) bueno, valor numérico     **4**
+  - (E) muy bueno, valor numérico **5**
+
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text | 
+
+Consulta 
