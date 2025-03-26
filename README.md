@@ -38,21 +38,57 @@ mtext(R.version.string, side = 1, line = 4, adj = 1)
 
 Si logras ver un gráfico, y la versión reportada en la parte de abajo es mayor a 4.2.0 estamos listos para empezar.
 
-### Dependencias
+---
+Hay varias maneras de usar **_Equi_**:
 
-**_Equi_** está escrito para ser instalado junto con todas las dependencias que necesita para funcionar. Sin embargo, al estar en contínuo desarrollo, recomendamos (para esta versión) instalar manualmente las dependencias necesarias. **_Este paso sólo lo tienes que realizar una vez_**.
+### Opción 1: Instalación desde github
+
+Esta es la opción más sencilla, abre una consola de R e instala **devtools**
 
 ```R
-install.packages(c("ggplot2","ggpubr","gridExtra","reshape2","xlsx","report","devtools","ggfortify"),dependecies=TRUE)
+install.packages("devtools",dependecies=TRUE)
 ```
-
-Si tu instalación es nueva probablemente salga el siguiente mensaje:
+Si tu instalación de **R** es nueva probablemente salga el siguiente mensaje:
 
 `--- Please select a CRAN mirror for use in this session ---`
 
 Seleccióna la locación más cercana a tu ciudad y continúa. Dependiendo de la velocidad de la red y la computadora esto puede tardar algunos minutos.
 
-### Instalación del paquete
+Ahora instala el paquete usando:
+
+```R
+install.packages("devtools",dependecies=TRUE)
+```
+
+Ahora, comprueba la instalación con el comando `help()`.  Éste va a desplegar la documentación del comando, por ejemplo:
+
+`help(preparar_datos)`
+
+Revisa la documentación y ciérrala con con la **tecla q**.
+
+**Nota:** Si deseas desinstalar **_Equi_** de tu computadora puedes usar:
+
+`remove.packages(pkgs="Equi")`
+
+###  Opción 2: Descarga y el paquete y cárgalo localmente en tu computadora 
+
+# Instalación de dependencias
+
+**_Equi_** está escrito para ser instalado junto con todas las dependencias que necesita para funcionar, si optas por la opción 2, es necesario instalar manualmente las dependencias necesarias. **_Este paso sólo lo tienes que realizar una vez_**.
+
+Abre una consola:
+
+```R
+install.packages(c("ggplot2","ggpubr","gridExtra","reshape2","xlsx","report","devtools","ggfortify"),dependecies=TRUE)
+```
+
+Si tu instalación de **R** es nueva probablemente salga el siguiente mensaje:
+
+`--- Please select a CRAN mirror for use in this session ---`
+
+Seleccióna la locación más cercana a tu ciudad y continúa. Dependiendo de la velocidad de la red y la computadora esto puede tardar algunos minutos.
+
+# Descarga el paquete y cárgalo
 
 Descarga el paquete desde https://github.com/jgascapi/Equi . Crea un directorio en una ubicación sencilla (por ejemplo: `Escritorio/Equi`). Descomprímelo y abre tu sesión de **R**. _Nota:_ Evita nombrar tu directorio de trabajo con acentos, caracteres especiales y/o espacios.
 
@@ -88,7 +124,24 @@ Revisa la documentación y ciérrala con con la **tecla q**.
 
 ## Implemetación
 
-Recomendamos correr todos los pasos de este manual antes de usar tus propios datos.
+Abre una consola de R y carga el paquete:
+
+`library("Equi")`
+
+O bien, si usaste la Opción 2
+
+`devtools::load_all("Equi")`
+
+Establece el directorio de tabajo donde se encuentren tus datos:
+
+```
+#por ejemplo en windows
+setwd("Escritorio/Equi/")
+#por ejemplo en Mac
+setwd("~/Escritorio/Equi/")
+```
+
+**Recomendamos correr todos los pasos de este manual antes de usar tus propios datos.**
 
 ### Generar archivos de entrada
 
@@ -102,13 +155,12 @@ Desplegará un mensaje con la ubicación de los archivos, por ejemplo:
 "Los archivos fueron generados en /home/jvalantine/Desktop/Equidad_Umbrxlla/"
 `
 
-
-Se generaron dos archivos:
+En eldirectorio de trabajo se generaron dos archivos:
 
 1. **_Formato_captura.pdf_**, para imprimir y capaturar los datos a mano. 
 2. **_Formato_captura.xlsx_**, es una hoja de cálculo en formato _xlsx_ para capturar los datos.
 
-Nota que no es necesario usar alguno de éstos formatos para analizar los datos. Sin embargo, la versión actual de **_Equi_** va esperar un archivo _xlsx_ con por lo menos ocho columnas: 
+Nota que no es necesario usar alguno de éstos formatos para analizar los datos. Sin embargo, la versión actual de **_Equi_** va esperar un archivo _xlsx_ con (por lo menos) las siguiente ocho columnas: 
 
  - **Columna 1:** _Fecha_, puede ser cualquier clave temporal en cualquier formato.
  - **Columna 2:** _Identidad.sexogenxrica_, identidad sexogenérica del Evaluador; por ejemplo: "Mujer", "Hombre".
@@ -161,7 +213,7 @@ Estos tres primeros mensajes describen los datos ingresados.
  - El paquete **_Equi_** va a eliminar a los individuos que tengan datos faltantes en cualquiera de las casillas.  
  - Revisa con cuidado que el número de claves generadas correspondan al número de adscripciones.  
 
-El siguiente mensaje describe las variables y el contenido los datos por analizar. Nota que las columnas de la cinco a la diez contienen las evaluaciones transformadas a valores numéricos.
+El siguiente mensaje describe las variables y el contenido los datos por analizar. Nota que las columnas de la cinco a la diez contienen las  transformadas a claves operacionales.
 
 ```
 Estas son las variables por analizar, revisa con cuidado:
@@ -176,8 +228,6 @@ Estas son las variables por analizar, revisa con cuidado:
  [9] "Variable en la columna 9 : Ad.key"                
 [10] "Variable en la columna 10 : CV_I.S"      
 ```
-
-
 
 Por default el comando va a crear un objeto dentro de R llamado **_`Data_I`_**. Revisa su contenido:
 
