@@ -1,0 +1,20 @@
+Package: Equi
+Title: Analiza datos de presentados en Ciccia et al. 2025
+Version: 1.1
+Authors@R: 
+    c(person("Jaime", "Gasca-Pineda",email="jgasca@ecologia.unam", role = c("aut", "cre")),
+    person("Laura","Espinosa-Asuar", role = c("aut", "cre") ),
+    person("Lu","Ciccia", role = c("aut", "cre")))
+Description: Analiza datos generados.
+License: `use_gpl3_license()`
+Encoding: UTF-8
+Import:
+		ggplot,
+		ggfortify,
+		report,
+		xlsx,
+		reshape2,
+		gridExtra,
+		ggpubr
+Maintainer: Jaime Gasca-Pineda <jgasca@ecologia.unam.mx>
+Date/Publication: 2024-12-12 13:00:00 UTC

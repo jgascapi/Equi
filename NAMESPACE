@@ -1,0 +1,7 @@
+#
+export(preparar_datos)
+export(preparar_formato)
+export(simular_datos)
+import(ggplot2)
+import(reshape2)
+import(ggfortify)
