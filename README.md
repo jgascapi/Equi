@@ -5,7 +5,7 @@ Paquete en R para analizar los datos publicados en Ciccia et al. 2025
 
 ## Introducción 
 
-**_Equi_** es un paquete escrito en **R** para el análisis descriptivo de datos generados de acuerdo con **Ciccia et al. 2025** ( [Ciccia et al. 2025](../home/Paper) ). Provee de gráficos y pruebas esdatdísticas básicas para interpretar los resultados de los _Curriculum Vitae_ presentados en **Ciccia et al. 2025**.
+**_Equi_** es un paquete escrito en **R** para el análisis descriptivo de datos generados de acuerdo con **Ciccia et al. 2025** ([Ciccia et al. 2025](../home/Paper)). Provee de gráficos y pruebas esdatdísticas básicas para interpretar los resultados de los _Curriculum Vitae_ presentados en **Ciccia et al. 2025**.
 
 Requiere una instalación reciente de R (R > 4.2, https://cran.r-project.org/ ) y cualquier programa compatible con hojas de cálculo **_xlsx_**. Nota que, al menos para el primer uso, es necesario contar con una conexión a internet para la instalación de las dependencias del programa.
 
