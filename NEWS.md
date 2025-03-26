@@ -1,4 +1,4 @@
-# Equi v1.1
+# Equi v0.1
 
     * Tranforma nombres de adscripción con la primer inicial seguida de cuatro minúsculas
     * Desplaza de manera autómatica celdas vacías hacia la izquierda.
