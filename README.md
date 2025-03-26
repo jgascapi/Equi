@@ -72,7 +72,7 @@ Revisa la documentación y ciérrala con con la **tecla q**.
 
 ###  Opción 2: Descarga y el paquete y cárgalo localmente en tu computadora 
 
-# Instalación de dependencias
+#### Instalación de dependencias
 
 **_Equi_** está escrito para ser instalado junto con todas las dependencias que necesita para funcionar, si optas por la opción 2, es necesario instalar manualmente las dependencias necesarias. **_Este paso sólo lo tienes que realizar una vez_**.
 
