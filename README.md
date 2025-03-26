@@ -88,7 +88,7 @@ Si tu instalación de **R** es nueva probablemente salga el siguiente mensaje:
 
 Seleccióna la locación más cercana a tu ciudad y continúa. Dependiendo de la velocidad de la red y la computadora esto puede tardar algunos minutos.
 
-## Descarga el paquete y cárgalo
+#### Descarga el paquete y cárgalo
 
 Descarga el paquete desde https://github.com/jgascapi/Equi . Crea un directorio en una ubicación sencilla (por ejemplo: `Escritorio/Equi`). Descomprímelo y abre tu sesión de **R**. _Nota:_ Evita nombrar tu directorio de trabajo con acentos, caracteres especiales y/o espacios.
 
