@@ -57,7 +57,7 @@ Seleccióna la locación más cercana a tu ciudad y continúa. Dependiendo de la
 Ahora instala el paquete usando:
 
 ```R
-install.packages("devtools",dependecies=TRUE)
+devtools::install_github(repo="https://github.com/jgascapi/Equi/")
 ```
 
 Ahora, comprueba la instalación con el comando `help()`.  Éste va a desplegar la documentación del comando, por ejemplo:
