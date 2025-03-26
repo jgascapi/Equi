@@ -1,6 +1,6 @@
 Package: Equi
 Title: Analiza datos de presentados en Ciccia et al. 2025
-Version: 1.1
+Version: 0.1
 Authors@R: 
     c(person("Jaime", "Gasca-Pineda",email="jgasca@ecologia.unam", role = c("aut", "cre")),
     person("Laura","Espinosa-Asuar", role = c("aut", "cre") ),
