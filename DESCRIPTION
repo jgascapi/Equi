@@ -3,11 +3,12 @@ Title: Analiza datos de presentados en Ciccia et al. 2025
 Version: 0.1
 Authors@R: 
     c(person("Jaime", "Gasca-Pineda",email="jgasca@ecologia.unam", role = c("aut", "cre")),
-    person("Laura","Espinosa-Asuar", role = c("aut", "cre") ),
-    person("Lu","Ciccia", role = c("aut", "cre")))
-Description: Analiza datos generados.
+    person("Laura","Espinosa-Asuar", role = c("aut") ),
+    person("Lu","Ciccia", role = c("aut")))
+Description: Analiza y simula datos de evaluación de CV para estudiar sesgos de género.
 License: `use_gpl3_license()`
 Encoding: UTF-8
+Depends: R (>= 4.2)
 Import:
 		ggplot,
 		ggfortify,
