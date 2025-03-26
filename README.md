@@ -72,7 +72,7 @@ setwd("~/Escritorio/Equi/")
 ```
 Ahora carga el paquete:
 
-`devtools::load_all("Equ")`
+`devtools::load_all("Equi")`
 
 Debe salir el siguiente mensaje:
 
