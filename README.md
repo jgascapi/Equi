@@ -48,11 +48,11 @@ Esta es la opción más sencilla, abre una consola de R e instala **devtools**
 ```R
 install.packages("devtools",dependecies=TRUE)
 ```
-Si tu instalación de **R** es nueva probablemente salga el siguiente mensaje:
+Si tu instalación de **R** es nueva probablemente saldrá el siguiente mensaje:
 
 `--- Please select a CRAN mirror for use in this session ---`
 
-Seleccióna la locación más cercana a tu ciudad y continúa. Dependiendo de la velocidad de la red y la computadora esto puede tardar algunos minutos.
+Selecciona el servidor más cercano a tu localidad y continúa. Dependiendo de la velocidad de la red y la computadora esto puede tardar algunos minutos.
 
 Ahora instala el paquete usando:
 
@@ -60,7 +60,7 @@ Ahora instala el paquete usando:
 devtools::install_github(repo="https://github.com/jgascapi/Equi/")
 ```
 
-Ahora, comprueba la instalación con el comando `help()`.  Éste va a desplegar la documentación del comando, por ejemplo:
+Comprueba la instalación con el comando `help()`.  Éste va a desplegar la documentación del comando, por ejemplo:
 
 `help(preparar_datos)`
 
@@ -136,7 +136,7 @@ Establece el directorio de tabajo donde se encuentren tus datos:
 
 ```
 #por ejemplo en windows
-setwd("Escritorio/Equi/")
+setwd("/Escritorio/Equi/")
 #por ejemplo en Mac
 setwd("~/Escritorio/Equi/")
 ```
@@ -167,11 +167,11 @@ Nota que no es necesario usar alguno de éstos formatos para analizar los datos.
  - **Columna 3:** _Adscripcixn_, lugar de trabajo o estudio. De manera automática **_Equi_** va a transformar esta columna a una clave usando las letras mayúsculas seguidas de cuatro letras minúsculas; por ejemplo, "_Instituto de Ciencias, Universidad de Toluca_" será transformado a "_InstCiencUnivToluc_".  
  - **Columna 4:** _Intervalo.Apellido_, La clave del género de acuerdo al nombre de los CV analizados. Esta columna debe estar codificada con la clave usada en **Ciccia et al. 2025**. Los valores esperados son "_A-K_" y "_L-Z_", estos valores serán transformados a "_M_" (Masculino) y "_F_" (Femenino).
 - **Columnas 5-8:** Las variables de evaluación por rubro: _Productividad_,	_Formacixn.Recursos_, _Divulga.Difus_ y	_Vinculacixn_. Los valores esperados son:
-  - (A) nulo, valor numérico      **1**
-  - (B) poco, valor numérico      **2**
-  - (C) regular, valor numérico   **3**
-  - (D) bueno, valor numérico     **4**
-  - (E) muy bueno, valor numérico **5**
+  - (A) nulo
+  - (B) poco
+  - (C) regular
+  - (D) bueno
+  - (E) muy bueno
 
 Consulta **Ciccia et al. 2025** para los detalles.
 
@@ -203,7 +203,7 @@ Los valores de la variable Adscripcixn fueron convertidos a la siguiente clave:
 [1] "RaccPD" "Umbr"  
 La clave será almacenada en la variable -Ad.key-
 |--------|--------|--------|--------|--------|
-Los valores de la variable -Intervalo.Apellido- fueron convertidos convertidos a la variable -CV_I.S-
+Los valores de la variable -Intervalo.Apellido- fueron convertidos convertidos a la variable -CV_I.S- 
 A-K: M
 L-Z: F
 ```
@@ -213,7 +213,7 @@ Estos tres primeros mensajes describen los datos ingresados.
  - El paquete **_Equi_** va a eliminar a los individuos que tengan datos faltantes en cualquiera de las casillas.  
  - Revisa con cuidado que el número de claves generadas correspondan al número de adscripciones.  
 
-El siguiente mensaje describe las variables y el contenido los datos por analizar. Nota que las columnas de la cinco a la diez contienen las  transformadas a claves operacionales.
+El siguiente mensaje describe las variables y el contenido los datos por analizar. Nota que las columnas de la cinco a la diez contienen los nombres transformados a claves operacionales.
 
 ```
 Estas son las variables por analizar, revisa con cuidado:
@@ -244,3 +244,21 @@ summary(Data_I)
 * La presente versión de **_Equi_** solo acepta archivos en formato **_xlsx_**.
 
 ---
+
+## Analizar los datos y generar archivos de salida
+
+**_Equi_** realiza automáticamente análisis de estadística y gráficos descriptivos. 
+
+- 
+
+
+Dentro de la sesión generada encontrás varios objetos que fueron usados para los distintos análisis, prueba usando `ls()` para desplegarlos. 
+Algunos de estos objetos pueden ser informativos, en el Apéndice, encontrás una descripción de cada objeto.
+
+Ejecuta el comando
+
+```
+describe_stats()
+```
+
+En tu directorio de trabajo observarás cinco archivos **_pdf_** con los resultados del análisis.
